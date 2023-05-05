@@ -9,6 +9,6 @@ policyDefaults:
       vendor: "OpenShift"
   remediationAction: inform
 policies:
-  - name: install-openshift-gitops
+  - name: openshift-gitops-installed
     manifests:
       - path: openshift-gitops-subscription.yaml

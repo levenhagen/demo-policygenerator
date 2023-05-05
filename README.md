@@ -10,7 +10,7 @@ Both policies are informative. If you want to either enforce the OpenShift GitOp
 
 Note: Be cautious, just enforce the **kubeadmin-removed** policy if you know what you're doing as this configuration may not be undone.
  
-__Pre-requesites:__
+## Pre-requesites: ##
 
 ClusterRoleBinding open-cluster-management:subscription-admin must be applied to your user or kube:admin/system:admin users.
 
@@ -34,7 +34,7 @@ subjects:
 EOF
 ```
 
-__Demo__
+## Demo ##
 When you're ready, deploy an app in RHACM using this repo url, and the policies should be created in a few moments under the governance menu.
 ![Applications Topology view](https://github.com/levenhagen/demo-policygenerator/blob/main/img/image.png?raw=true)
 

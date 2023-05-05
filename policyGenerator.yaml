@@ -12,3 +12,8 @@ policies:
   - name: openshift-gitops-installed
     manifests:
       - path: openshift-gitops-subscription.yaml
+  - name: kubeadmin-removed
+    manifests:
+      - path: kubeadmin-pass.yaml
+    complianceType: mustNotHave
+    

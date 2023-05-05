@@ -15,5 +15,5 @@ policies:
   - name: kubeadmin-removed
     manifests:
       - path: kubeadmin-pass.yaml
-    complianceType: mustNotHave
+    complianceType: mustnothave
     

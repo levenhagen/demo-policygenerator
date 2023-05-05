@@ -36,5 +36,5 @@ EOF
 
 __Demo__
 When you're ready, deploy an app in RHACM using this repo url, and the policies should be created in a few moments under the governance menu.
-![Applications Topology view](https://github.com/levenhagen/demo-policygenerator/blob/main/img/image.jpg?raw=true)
+![Applications Topology view](https://github.com/levenhagen/demo-policygenerator/blob/main/img/image.png?raw=true)
 

@@ -7,7 +7,7 @@ policyDefaults:
   placement:
     clusterSelectors:
       vendor: "OpenShift"
-  remediationAction: enforce
+  remediationAction: inform
 policies:
   - name: install-openshift-gitops
     manifests:

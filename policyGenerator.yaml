@@ -6,7 +6,7 @@ policyDefaults:
   namespace: policies
   placement:
     clusterSelectors:
-      vendor: "OpenShift"
+      rhdp_usage: development
   remediationAction: inform
 policies:
   - name: openshift-gitops-installed

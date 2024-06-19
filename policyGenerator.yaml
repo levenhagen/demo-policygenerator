@@ -6,7 +6,7 @@ policyDefaults:
   namespace: policies
   policyDefaults.orderManifests: true
   policyDefaults.orderPolicies: true
-  complianceType: inform
+  complianceRemediation: inform
 policies:
   - name: idp-configuration
     manifests:

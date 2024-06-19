@@ -10,11 +10,11 @@ policyDefaults:
 policies:
   - name: idp-configuration
     manifests:
-      - path: input/idp-secrets.yaml
-      - path: input/oauth-config.yaml
-      - path: input/admin-rolebinding.yaml
+      - path: manifests/idp-secrets.yaml
+      - path: manifests/oauth-config.yaml
+      - path: manifests/admin-rolebinding.yaml
   - name: kubeadmin-removed
     manifests:
-      - path: input/kubeadmin-pass.yaml
+      - path: manifests/kubeadmin-pass.yaml
     complianceType: mustnothave
     

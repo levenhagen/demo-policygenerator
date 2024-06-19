@@ -12,7 +12,7 @@ policies:
     manifests:
       - path: input/idp-secrets.yaml
       - path: input/oauth-config.yaml
-      - path: input/admin-rolebindings.yaml
+      - path: input/admin-rolebinding.yaml
   - name: kubeadmin-removed
     manifests:
       - path: input/kubeadmin-pass.yaml

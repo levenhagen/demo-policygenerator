@@ -3,7 +3,7 @@ kind: PolicyGenerator
 metadata:
   name: authentication-day2-configuration
 policyDefaults:
-  namespace: policies
+  namespace: my-policies
   policyDefaults.orderManifests: true
   policyDefaults.orderPolicies: true
   complianceRemediation: inform

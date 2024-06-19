@@ -6,14 +6,14 @@ policyDefaults:
   namespace: my-policies
   policyDefaults.orderManifests: true
   policyDefaults.orderPolicies: true
-  complianceRemediation: inform
+  remediationAction: inform
 policies:
   - name: idp-configuration
     manifests:
       - path: manifests/idp-secrets.yaml
       - path: manifests/oauth-config.yaml
       - path: manifests/admin-rolebinding.yaml
-  - name: kubeadmin-removed
+  - name: kubeadmin-remove
     manifests:
       - path: manifests/kubeadmin-pass.yaml
     complianceType: mustnothave

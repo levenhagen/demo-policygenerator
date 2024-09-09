@@ -1,20 +1,19 @@
 apiVersion: policy.open-cluster-management.io/v1
 kind: PolicyGenerator
 metadata:
-  name: authentication-day2-configuration
+  name: install-openshift-gitops
 policyDefaults:
-  namespace: my-policies
-  policyDefaults.orderManifests: true
-  policyDefaults.orderPolicies: true
+  namespace: policies
+  placement:
+    clusterSelectors:
+      rhdp_usage: development
   remediationAction: inform
 policies:
-  - name: idp-configuration
+  - name: openshift-gitops-installed
     manifests:
-      - path: manifests/idp-secrets.yaml
-      - path: manifests/oauth-config.yaml
-      - path: manifests/admin-rolebinding.yaml
-  - name: kubeadmin-remove
+      - path: openshift-gitops-subscription.yaml
+  - name: kubeadmin-removed
     manifests:
-      - path: manifests/kubeadmin-pass.yaml
+      - path: kubeadmin-pass.yaml
     complianceType: mustnothave
     

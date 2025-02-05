@@ -20,6 +20,8 @@ Note: **Be cautious**, just enforce the **kubeadmin-removed** policy if you know
 ## Demo ##
 When you're ready, deploy an ApplicationSet in RHACM using this repo url. 
 Select **branch: main** and **path: dir**.
+In Placement, select __only local-cluster__.
+Make sure to have the **label: rhdp_usage=development** applied to the clusters you want to apply this policy to.
 In just a few moments, the policies should be created under the governance menu.
-![Applications Topology view](https://github.com/levenhagen/demo-policygenerator/blob/main/img/image.png?raw=true)
+![Applications Topology view](https://github.com/levenhagen/demo-policygenerator/blob/main/dir/img/image.png?raw=true)
 

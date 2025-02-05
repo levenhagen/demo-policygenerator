@@ -1,7 +1,7 @@
 apiVersion: policy.open-cluster-management.io/v1
 kind: PolicyGenerator
 metadata:
-  name: install-openshift-gitops
+  name: policy-generator-example
 policyDefaults:
   namespace: default
   placement:

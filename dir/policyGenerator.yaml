@@ -3,6 +3,7 @@ kind: PolicyGenerator
 metadata:
   name: install-openshift-gitops
 policyDefaults:
+  namespace: default
   placement:
     clusterSelectors:
       rhdp_usage: development

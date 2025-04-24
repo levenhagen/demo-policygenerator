@@ -5,7 +5,7 @@ metadata:
 policyDefaults:
   namespace: default
   placement:
-    clusterSelectors:
+    labelSelector:
       rhdp_usage: development
   remediationAction: inform
 policies:
